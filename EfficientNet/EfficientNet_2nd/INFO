@@ -3,7 +3,7 @@ Restriction
 - epoch <= 50
 
 Environments
-- kaggle notebook
+- kaggle notebook : GPU
 - Pytorch
 
 Model parameter 
@@ -16,6 +16,9 @@ Data Preprocessing
 
 train / valid ratio
 - 0.95 : 0.05
+
+Batch size
+- 32
 
 Optimizer
 - Adam

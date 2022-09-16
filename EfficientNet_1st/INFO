@@ -1,0 +1,33 @@
+Restriction
+- parameter < 50M
+- epoch <= 50
+
+Environments
+- kaggle notebook
+- Pytorch
+
+Model parameter 
+- depth coefficient : 1
+- width coefficient : 1
+- num classes : 400
+
+Optimizer
+- Adam
+Optimizer parameter
+- learning rate : 0.0002
+- weight decay = 0.0005
+
+Sceduler
+- MultiStepLR
+Sceduler parameter
+- milestone : 20 / 40 / 45
+- gamma : 0.5
+
+Result
+- train loss : 0.263
+- train accuracy : 94.6%
+
+- validation loss : 0.393
+- validation accuracy : 90.0%
+
+

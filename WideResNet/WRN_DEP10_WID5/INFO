@@ -1,0 +1,42 @@
+Restriction
+- parameter < 50M
+- epoch <= 50
+
+Environments
+- Google Colab : GPU
+- Pytorch
+
+Model parameter 
+- depth coefficient : 1
+- width coefficient : 1
+- num classes : 400
+
+Data Preprocessing
+- [transforms.Resize((32,32)), transforms.RandomRotation(45),transforms.RandomHorizontalFlip(),
+  transforms.RandomVerticalFlip(),transforms.ToTensor(), 
+  transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]
+
+train / valid ratio
+- 0.9 : 0.1
+
+Batch size
+- 32
+
+Optimizer
+- SAM
+Optimizer parameter
+- learning rate : 0.1
+- weight decay = 0.0005
+
+Sceduler
+- StepLR
+Sceduler parameter
+- milestone : 20 / 30 / 40
+- gamma : 0.5
+
+Result
+- train loss : 0.662
+- train accuracy : 90.5%
+
+- validation loss : 0.817
+- validation accuracy : 84.2%

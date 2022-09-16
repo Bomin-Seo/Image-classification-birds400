@@ -11,6 +11,12 @@ Model parameter
 - width coefficient : 1
 - num classes : 400
 
+Data Preprocessing
+- [transforms.RandomRotation(45),transforms.RandomHorizontalFlip(), transforms.ToTensor(),transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]
+
+train / valid ratio
+- 0.9 : 0.1
+
 Optimizer
 - Adam
 Optimizer parameter
